@@ -1,0 +1,7 @@
+<h1>
+  My Page is {{title}}
+</h1>
+
+First Name: <input type="text" name="firstName" [value]="firstName" #firstObjName/> <br/>
+Last Name: <input type="text" name="lastName" [value]="lastName" #lastObjName/> <br/>
+<button (click)="getTitleNameValues(firstObjName.value,lastObjName.value)">Submit</button>
